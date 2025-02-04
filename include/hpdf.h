@@ -521,6 +521,10 @@ HPDF_Page_CreateLinkAnnot  (HPDF_Page          page,
                             HPDF_Rect          rect,
                             HPDF_Destination   dst);
 
+HPDF_EXPORT(HPDF_Annotation)
+HPDF_Page_CreateFileAttachmentLinkAnnot(HPDF_Page   page,
+                                        HPDF_Rect   rect,
+                                        const char  *file);
 
 HPDF_EXPORT(HPDF_Annotation)
 HPDF_Page_CreateURILinkAnnot  (HPDF_Page     page,
@@ -992,6 +996,11 @@ HPDF_EXPORT(HPDF_EmbeddedFile)
 HPDF_AttachFile  (HPDF_Doc    pdf,
                   const char *file);
 
+HPDF_EXPORT(HPDF_Image)
+HPDF_AttachFileFromMem  (HPDF_Doc         pdf,
+                         const char       *filename,
+                         const HPDF_BYTE  *buffer,
+                         HPDF_UINT        size);
 
 /*--------------------------------------------------------------------------*/
 /*----- extended graphics state --------------------------------------------*/
