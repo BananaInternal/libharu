@@ -208,6 +208,7 @@ EXPORTS
     HPDF_SetPagesConfiguration
     HPDF_SetPassword
     HPDF_SetPermission
+    HPDF_SetPDFAConformance
     HPDF_SetViewerPreference
     HPDF_TextAnnot_SetIcon
     HPDF_TextAnnot_SetOpened
